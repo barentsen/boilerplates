@@ -1,4 +1,4 @@
 boilerplates
 ============
 
-Boilerplates I use for various languages
+This repository contains template files I use for various languages.
