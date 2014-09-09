@@ -1,0 +1,117 @@
+% Simple beamer presentation template by Geert Barentsen
+\documentclass[aspectratio=43]{beamer}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{microtype}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+% Das font
+\usepackage[default]{opensans}
+
+% Das theme
+\setbeamertemplate{frametitle}
+  {\bigskip
+   \insertframetitle\par
+   \smallskip}
+\setbeamertemplate{itemize item}{$\bullet$}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[text line]{%
+    \hfill\strut{%
+        \scriptsize\sf\color{black!60}%
+        \quad\insertframenumber
+    }
+}
+
+% Das Flat UI colour scheme
+\definecolor{pomegranate}{HTML}{c0392b}  % red
+\definecolor{belize}{HTML}{2980b9}       % blue
+\definecolor{midnight}{HTML}{2c3e50}     % dark blue
+\setbeamercolor{title}{fg=pomegranate}
+\setbeamercolor{frametitle}{fg=midnight}
+\setbeamercolor{normal text}{fg=midnight}
+\setbeamercolor{itemize item}{fg=midnight}
+\setbeamercolor{enumerate item}{fg=midnight}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Hello World!}
+\author{Das Author}
+\date{\today}
+ 
+\begin{document}
+ 
+\begin{frame}[plain]
+\titlepage
+\pdfbookmark[2]{\inserttitle}{titre}
+\begin{center}
+
+\end{center}
+\end{frame}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Purpose of this talk}
+    I will say three things:
+    \medskip
+    \begin{enumerate}
+        \item Something smart.\\ \emph{($\rightarrow$ yeah right)}
+        \medskip
+        \item Something funny.\\ \emph{($\rightarrow$ surely not)}
+        \medskip
+        \item Something stupid\\ \emph{($\rightarrow$ I bet!)}
+    \end{enumerate}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{This is a slide}
+Some text.\bigskip
+
+Some more text.\bigskip
+
+%\includegraphics[width=0.9\textwidth]{plot.pdf}
+\end{frame}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{A slide with two columns}
+    \begin{columns}[<options>]
+    \begin{column}{0.45\textwidth}
+        This is column one.
+    \end{column}
+    \begin{column}{0.45\textwidth}
+        This is column two.
+    \end{column}
+    \end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Conclusions}
+    \begin{itemize}
+        \item one;
+        \item two;
+        \item three.
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{}
+\begin{center}
+\huge
+Backup slides
+\end{center}
+\end{frame}
+
+\end{document}
