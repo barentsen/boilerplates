@@ -1,4 +1,7 @@
 % Simple beamer presentation template by Geert Barentsen
+%
+% Note: to sanitise the PDF output, try:
+% gs -o out.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress in.pdf
 \documentclass[aspectratio=43]{beamer}
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
@@ -42,10 +45,22 @@
 \setbeamercolor{itemize item}{fg=midnight}
 \setbeamercolor{enumerate item}{fg=midnight}
 
+% Use this to push text to the bottom:
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+
+% Remember, good talk structure:
+% 1) Surprising attention grabber which makes the problem interesting
+%    (can be 3 slides: context-problem-solution)
+% 2) Title slide -- introduce the speaker
+% 3) Summary slide introducing the 3 key points
+% 4) bla bla bla
+% 5) Conclusions summarising 3 key points
+% 6) Reconnect with attention grabber
+% 7) Contact info, if needed.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Hello World!}
-\author{Das Author}
+\author{Das Author (@TwitterHandle)}
 \date{\today}
  
 \begin{document}
