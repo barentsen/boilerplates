@@ -9,6 +9,7 @@ __credits__ = []
 
 import logging
 log = logging.getLogger(__name__)
+log.setLevel(logging.INFO)
 
 if __name__ == '__main__':
     pass
